@@ -19,6 +19,8 @@ import milestone from '@/sanity/schemas/objects/milestone'
 import timeline from '@/sanity/schemas/objects/timeline'
 import home from '@/sanity/schemas/singletons/home'
 import settings from '@/sanity/schemas/singletons/settings'
+import test1 from '@/sanity/schemas/sections/test1'
+import test2 from '@/sanity/schemas/sections/test2'
 
 const title =
   process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
@@ -42,6 +44,9 @@ export default defineConfig({
       // Objects
       milestone,
       timeline,
+      // sections
+      test1,
+      test2,
     ],
   },
   plugins: [

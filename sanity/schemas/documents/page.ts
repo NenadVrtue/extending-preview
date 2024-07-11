@@ -52,6 +52,18 @@ export default defineType({
       validation: (rule) => rule.max(155).required(),
     }),
     defineField({
+      name: 'content',
+      description: 'Array of page sections',
+      title: 'Content',
+
+      type: 'array',
+      of: [
+        defineArrayMember({ type: 'test1' }),
+        defineArrayMember({ type: 'test2' }),
+      ],
+    }),
+
+    defineField({
       type: 'array',
       name: 'body',
       title: 'Body',

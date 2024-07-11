@@ -21,6 +21,7 @@ export const pagesBySlugQuery = groq`
     _id,
     body,
     overview,
+    content[] ,
     title,
     "slug": slug.current,
   }
