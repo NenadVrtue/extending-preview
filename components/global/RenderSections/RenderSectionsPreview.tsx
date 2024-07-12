@@ -19,5 +19,5 @@ export default function PagePreview(props: Props) {
     initial,
   })
 
-  return <RenderSectionsLayout data={initial} />
+  return <RenderSectionsLayout sections={data!} />
 }
